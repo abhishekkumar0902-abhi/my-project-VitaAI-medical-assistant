@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About VitaAI</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+
+    <div class="app-container full-page">
+        
+        <main class="about-main">
+            
+            <div class="about-top-bar">
+                <button class="back-btn-top" onclick="window.location.href='{{ url_for('index') }}'">
+                    <span class="material-symbols-rounded">arrow_back</span>
+                    Back to Chat
+                </button>
+            </div>
+
+            <div class="about-wrapper">
+                
+                <div class="about-hero">
+                    <span class="material-symbols-rounded" style="font-size: 4rem; color: var(--primary);">cardiology</span>
+                    <h1>About VitaAI Project</h1>
+                    <p>Gen-AI Powered Medical Assistant</p>
+                </div>
+
+                <div class="about-card-main">
+                    <h3><span class="material-symbols-rounded">description</span> Project Mission</h3>
+                    <p>
+                    VitaAI is an advanced health-intelligence platform dedicated to making medical knowledge more accessible. By combining Retrieval-Augmented Generation (RAG) with large language models like Llama 3 (via Groq), we provide users with evidence-based insights derived directly from verified medical literature. Our mission is to reduce health misinformation by grounding every AI response in expert-reviewed data.
+                    <br><br>
+                    VitaAI supports multilingual interactions, allowing users to consult in Hindi and English for better health understanding.
+                    </p>
+                    
+                    <div class="drive-box">
+                        <p>Access the repository of medical books and research materials used.</p>
+                        <a href="https://drive.google.com/drive/folders/1R84g9TsXoJzMJ-RTCotcn6WMVVwR4M8n?usp=drive_link" target="_blank" class="drive-button">
+                            <span class="material-symbols-rounded">folder_open</span> Open 
+                        </a>
+                    </div>
+                </div>
+
+                <h2 class="section-heading">Our Team</h2>
+                <div class="team-grid">
+
+                    <div class="member-card">
+                        <img src="{{ url_for('static', filename='harsh_profile.jpg') }}" alt="Harsh Kumar" class="member-img">
+                        <h4>Harsh Kumar</h4>
+                        <p>Cloud & AI</p>
+                        <a href="https://www.linkedin.com/in/harshcse/" target="_blank" class="li-icon">LinkedIn</a>
+                    </div>
+                    <div class="member-card">
+                        <img src="{{ url_for('static', filename='abhi_profile.jpg') }}" alt="Abhishek Kumar" class="member-img">
+                        <h4>Abhishek Kumar</h4>
+                        <p>Frontend Developer</p>
+                        <!-- <a href="LINKEDIN_URL" target="_blank" class="li-icon">LinkedIn</a> -->
+                    </div>
+                    <div class="member-card">
+                        <img src="{{ url_for('static', filename='sonu_profile.jpg') }}"  alt="Sonu Kumar" class="member-img">
+                        <h4>Sonu Kumar</h4>
+                        <p>Backend Developer</p>
+                        <!-- <a href="LINKEDIN_URL" target="_blank" class="li-icon">LinkedIn</a> -->
+                    </div>
+                </div>
+
+                <div class="supervisor-tag">
+                    Under the guidance of <strong>Dr. Abhaya</strong>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
